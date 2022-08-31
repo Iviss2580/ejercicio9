@@ -1,15 +1,18 @@
 public class Main {
     public static void main(String[] args) {
         Cliente cliente= new Cliente();
+        Trabajador trabajador= new Trabajador();
         cliente.edad= 30;
         cliente.nombre= "maria";
         cliente.numero= 56699;
         cliente.credito= "es confiable";
 
-        System.out.println(cliente.getEdad());
-        System.out.println(cliente.getNombre());
-        System.out.println(cliente.getNumero());
-        System.out.println(cliente.getCredito());
+        System.out.println("Soy nuevo cliente, me presento "+cliente.getEdad()+" me llamo "+ cliente.getNombre()+" mi numero es "+ cliente.getNumero()+ "en tema credito todos me dicen "+ cliente.getCredito());
+        trabajador.edad= 25;
+        trabajador.nombre= "Jose";
+        trabajador.numero= 2333;
+        trabajador.salario= 123999;
+        System.out.println("Soy el nuevo, me presento "+trabajador.getEdad()+" me llamo "+ trabajador.getNombre()+" mi numero es "+ trabajador.getNumero()+" voy a percibir "+ trabajador.getSalario());
     }
 }
 class Persona {
